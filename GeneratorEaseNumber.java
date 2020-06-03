@@ -18,8 +18,6 @@ public class GeneratorEaseNumber {
         while (true){
             BigInteger value = generatorRndValue(numberOfDigits);
             if (SoloveyStrassenTest.definition(value, new BigInteger(String.valueOf(100))))
-                //Добавить проверку через Тесты Миллера и Соловея - Штассеана
-                //нужно переписать, чтобы можно было работать с BigInteger в тестах на простое число
                 return value;
         }
     }
